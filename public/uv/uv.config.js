@@ -48,7 +48,7 @@ const base64 = {
 
 self.__uv$config = {
     prefix: '/service/uv/',
-    bare: 'https://bare.'+location.hostname,
+    bare: '/bare/',
     encodeUrl: (e=>decodeURIComponent(Ultraviolet.codec.base64.encode(e))),
     decodeUrl: (e=>decodeURIComponent(Ultraviolet.codec.base64.decode(e))),
     handler: '/uv/uv.handler.js',
